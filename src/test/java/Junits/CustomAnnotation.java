@@ -1,5 +1,4 @@
 package Junits;
-
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -9,11 +8,10 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
-
-@Target({ElementType.ANNOTATION_TYPE, ElementType.METHOD})
+@Target({ ElementType.ANNOTATION_TYPE, ElementType.METHOD })
 @Retention(RetentionPolicy.RUNTIME)
 @Tag("Sanity")
-@DisplayName("Custom Test")
+@DisplayName("Test to check custom annotation")
 @Test
 public @interface CustomAnnotation {
 

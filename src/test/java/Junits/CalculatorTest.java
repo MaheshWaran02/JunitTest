@@ -10,12 +10,12 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Tag;
 
-public class CalculaterTest {
+public class CalculatorTest {
 
 	@DisplayName("Add two positive numbers Test")
 	@Test
 	@Tag("Sanity")
-	//@Tag("Regression")
+	@Tag("Regression")
 	public void test1()
 	{
 		int result = Calculator.add(78, 23);
@@ -33,7 +33,7 @@ public class CalculaterTest {
 	
 	@DisplayName("Add two positive numbers where result is not matching Test")
 	@Test
-	//@Tag("Regression")
+	@Tag("Regression")
 	public void test3()
 	{
 		int result = Calculator.add(54, 20);
